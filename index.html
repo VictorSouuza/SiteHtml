@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pré-Matrícula</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            margin: auto;
+            width: 50%;
+        }
+        table {
+            margin: auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+    <form action="#" method="post">
+        <h3>Dados Pessoais</h3>
+        <table>
+            <tr>
+                <th>Nome do aluno:</th>
+                <td><input type="text" name="nome_aluno"></td>
+            </tr>
+            <tr>
+                <th>Nascimento (dd/mm/aaaa):</th>
+                <td><input type="text" name="nascimento"></td>
+            </tr>
+            <tr>
+                <th>Nome da mãe:</th>
+                <td><input type="text" name="nome_mae"></td>
+            </tr>
+            <tr>
+                <th>Nome do pai:</th>
+                <td><input type="text" name="nome_pai"></td>
+            </tr>
+            <tr>
+                <th>Telefone DDD:</th>
+                <td><input type="text" name="telefone_ddd"></td>
+                <th>Tel:</th>
+                <td><input type="text" name="telefone"></td>
+                <th>Ramal:</th>
+                <td><input type="text" name="ramal"></td>
+            </tr>
+        </table>
+        <h3>Informações da Matrícula</h3>
+        <label for="serie">Série:</label>
+        <select name="serie" id="serie">
+            <option value="pre-escolar">Pré-Escolar</option>
+            <option value="ensino-medio">Ensino Médio</option>
+            <option value="superior">Superior</option>
+        </select><br><br>
+        <label for="turno">Turno:</label><br>
+        <input type="checkbox" id="manha" name="turno" value="manha">
+        <label for="manha">Manhã</label><br>
+        <input type="checkbox" id="tarde" name="turno" value="tarde">
+        <label for="tarde">Tarde</label><br><br>
+        <h3>Atividades Extracurriculares</h3>
+        <input type="checkbox" id="informatica" name="atividades" value="informatica">
+        <label for="informatica">Informática</label><br>
+        <input type="checkbox" id="musica" name="atividades" value="musica">
+        <label for="musica">Música</label><br>
+        <input type="checkbox" id="balet" name="atividades" value="balet">
+        <label for="balet">Balé</label><br>
+        <input type="checkbox" id="pintura" name="atividades" value="pintura">
+        <label for="pintura">Pintura</label><br>
+        <input type="checkbox" id="judo" name="atividades" value="judo">
+        <label for="judo">Judô</label><br>
+        <input type="checkbox" id="futebol" name="atividades" value="futebol">
+        <label for="futebol">Futebol</label><br><br>
+        <input type="submit" value="Enviar formulário">
+        <input type="reset" value="Limpar campos">
+    </form>
+</body>
+</html>
